@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - منصة The Prof التعليمية</title>
+    <meta name="description" content="إنشاء حساب جديد في منصة The Prof التعليمية" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header" id="masthead">
+        <div class="inside-header container">
+            <div class="site-logo">
+                <a href="index.html" rel="home">
+                    <img class="header-image" alt="The Prof" src="logo.jpeg" width="50" height="50" />
+                    <span class="site-title">منصة The Prof التعليمية</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">الدورات</a></li>
+                    <li class="nav-item"><a href="#grades" class="nav-link">المراحل الدراسية</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">عن المنصة</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <!-- Auth Buttons -->
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">دخول</a>
+                <a href="register.html" class="btn register-btn">تسجيل</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+            <li class="mobile-nav-item"><a href="#courses" class="mobile-nav-link">الدورات</a></li>
+            <li class="mobile-nav-item"><a href="#grades" class="mobile-nav-link">المراحل الدراسية</a></li>
+            <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">عن المنصة</a></li>
+            <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">تواصل معنا</a></li>
+        </ul>
+        <div class="mobile-auth-buttons">
+            <a href="login.html" class="btn login-btn">دخول</a>
+            <a href="register.html" class="btn register-btn">تسجيل</a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main class="auth-content">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1 class="auth-title">إنشاء حساب جديد</h1>
+                    <p class="auth-subtitle">انضم إلى منصة The Prof التعليمية واستمتع بتجربة تعليمية فريدة</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">الاسم الأول</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="first-name" name="first-name" placeholder="الاسم الأول" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">الاسم الأخير</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="last-name" name="last-name" placeholder="الاسم الأخير" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+                            <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">تأكيد كلمة المرور</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="أعد إدخال كلمة المرور" required>
+                            <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-type">نوع المستخدم</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user-graduate"></i>
+                            <select id="user-type" name="user-type" required>
+                                <option value="" disabled selected>اختر نوع المستخدم</option>
+                                <option value="student">طالب</option>
+                                <option value="teacher">معلم</option>
+                                <option value="parent">ولي أمر</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">أوافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة الخصوصية</a></label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-submit">إنشاء حساب</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+
+                <div class="social-auth">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                        <span>التسجيل باستخدام Google</span>
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>التسجيل باستخدام Facebook</span>
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="logo-white.png" alt="The Prof" width="150">
+                        </div>
+                        <p class="footer-description">منصة تعليمية متكاملة تهدف إلى توفير محتوى تعليمي آمن وعالي الجودة لجميع الطلاب</p>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">روابط سريعة</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="index.html#courses">الدورات</a></li>
+                            <li><a href="index.html#grades">المراحل الدراسية</a></li>
+                            <li><a href="about.html">عن المنصة</a></li>
+                            <li><a href="index.html#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">تواصل معنا</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> <span>القاهرة، مصر</span></li>
+                            <li><i class="fas fa-phone"></i> <span>+20 123 456 7890</span></li>
+                            <li><i class="fas fa-envelope"></i> <span>info@theprof.com</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">© 2025 The Prof. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle password visibility
+        document.querySelectorAll('.toggle-password').forEach(button => {
+            button.addEventListener('click', function() {
+                const passwordInput = this.previousElementSibling;
+                const icon = this.querySelector('i');
+
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
